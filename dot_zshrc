@@ -11,6 +11,10 @@ setopt AUTO_CD
 setopt no_prompt_cr
 setopt no_prompt_sp
 
+# Editors
+export EDITOR=nvim
+export VISUAL=nvim
+
 # Aliases.
 alias ls="lsd -l --icon=always"
 alias lst="lsd -l --tree --icon=always"
