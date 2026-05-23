@@ -38,6 +38,16 @@ alias gcm='git commit -m'
 alias gl="git log --decorate=full --color=always"
 alias gll="git log --oneline"
 
+# Dev Shortcuts
+alias uvr="uv run"
+alias lg="lazygit"          
+alias dk="docker"
+alias dkc="docker compose"
+
+# Quick activate for uv/venv
+alias va="source .venv/bin/activate"
+alias vd="deactivate"
+
 # Enable Vi mode
 bindkey -v
 
