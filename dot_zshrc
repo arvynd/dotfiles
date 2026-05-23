@@ -1,30 +1,29 @@
-
-### .zshrc
-
+# Init 
 eval "$(starship init zsh)"
-
 eval "$(atuin init zsh)"
-# Enter directory without cd.
-setopt AUTO_CD
 
-# Prevent extra newlines
+# Options
+setopt AUTO_CD
 setopt no_prompt_cr
 setopt no_prompt_sp
 
-# Editors
+# Editor
 export EDITOR=nvim
 export VISUAL=nvim
 
-# Aliases.
+# PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# Aliases 
 alias ls="lsd -l --icon=always"
 alias lst="lsd -l --tree --icon=always"
 alias lsa="lsd -a --long --icon=always"
 alias ff="fastfetch"
 alias vi="nvim"
-alias btop='btop --force-utf' 
+alias btop='btop --force-utf'
 alias lg="lazygit"
 
-# Git Aliases.
+# Git
 alias gs='git status --column'
 alias gco='git checkout'
 alias gcb='git checkout -b'
@@ -36,28 +35,20 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gc='git commit'
 alias gcm='git commit -m'
-alias gl="git log"
+alias gl="git log --decorate=full --color=always"
+alias gll="git log --oneline"
 
-# uv
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$PATH:$HOME/.local/bin"
-
-# vi mode
+# Enable Vi mode
 bindkey -v
 
-# Plugins and stuff.
+# Completion
+autoload -Uz compinit
+compinit
 zstyle ':completion:*' matcher-list \
   'm:{a-z}={A-Z}' \
   'r:|[._-]=* r:|=*'
-
-# Used for completion.
-autoload -Uz compinit
-compinit
 zstyle ':completion:*' menu select
 
-# Then load plugins
+# Plugins 
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# opencode
-export PATH=/home/aravind/.opencode/bin:$PATH
