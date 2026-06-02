@@ -22,7 +22,6 @@ alias ff="fastfetch"
 alias vi="nvim"
 alias btop='btop --force-utf'
 alias lg="lazygit"
-alias glow="glow -t -l"
 
 # Git
 alias gs='git status --column'
