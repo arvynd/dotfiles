@@ -6,8 +6,7 @@ binds {
 
     // === Application Launchers ===
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
-    Mod+G hotkey-overlay-title="Open Ghostty" { spawn "ghostty"; }
-   Alt+Space hotkey-overlay-title="Application Launcher" {
+    Alt+Space hotkey-overlay-title="Application Launcher" {
         spawn "dms" "ipc" "call" "spotlight" "toggle";
     }
     
