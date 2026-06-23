@@ -15,3 +15,4 @@ chezmoi apply
 - niri
 - kitty
 - starship
+- neovim
