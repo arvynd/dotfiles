@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Reset WirePlumber to fix Bluetooth issues
+
+set -e
+
+echo "Stopping WirePlumber..."
+systemctl --user stop wireplumber
+
+echo "Clearing state..."
+rm -rf ~/.local/state/wireplumber
+
+echo "Starting WirePlumber..."
+systemctl --user start wireplumber
+
+echo "Done! WirePlumber has been reset."
