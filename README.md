@@ -16,3 +16,4 @@ chezmoi apply
 - kitty
 - starship
 - neovim
+- zellij
