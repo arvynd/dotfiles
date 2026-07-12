@@ -1,6 +1,7 @@
 # Init 
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
+eval "$(zoxide init bash)"
 
 # Options
 setopt AUTO_CD
@@ -40,7 +41,7 @@ alias gll="git log --oneline"
 
 # Dev Shortcuts
 alias uvr="uv run"
-alias lg="lazygit"          
+alias lg="lazygit"
 alias dk="docker"
 alias dkc="docker compose"
 
@@ -63,5 +64,3 @@ zstyle ':completion:*' menu select
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Init zoxide
-eval "$(zoxide init bash)"
