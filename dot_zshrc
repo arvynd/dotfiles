@@ -23,6 +23,7 @@ alias ff="fastfetch"
 alias vi="nvim"
 alias btop='btop --force-utf'
 alias lg="lazygit"
+alias ze="zellij --layout compact"
 
 # Git
 alias gs='git status --column'
