@@ -16,14 +16,15 @@ export VISUAL=nvim
 export PATH="$HOME/.local/bin:$PATH"
 
 # Aliases 
-alias ls="lsd -l --icon=always"
-alias lst="lsd -l --tree --icon=always"
-alias lsa="lsd -a --long --icon=always"
+alias ls="eza -l --git --icons=always"
+alias lst="eza -l --git --tree --icons=always"
+alias lsa="eza -l -a --git --tree --icons=always"
 alias ff="fastfetch"
 alias vi="nvim"
 alias btop='btop --force-utf'
 alias lg="lazygit"
 alias ze="zellij --layout compact"
+alias ai="claude"
 
 # Git
 alias gs='git status --column'
