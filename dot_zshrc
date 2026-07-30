@@ -21,6 +21,7 @@ alias lst="eza -l --git --tree --icons=always"
 alias lsa="eza -l -a --git --tree --icons=always"
 alias ff="fastfetch"
 alias vi="nvim"
+alias v="nvim"
 alias btop='btop --force-utf'
 alias lg="lazygit"
 alias ze="zellij --layout compact"
