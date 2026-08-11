@@ -1,7 +1,7 @@
 # Init 
 eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
-eval "$(zoxide init bash)"
+eval "$(zoxide init zsh)"
 
 # Options
 setopt AUTO_CD
