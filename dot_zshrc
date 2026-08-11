@@ -16,9 +16,9 @@ export VISUAL=nvim
 export PATH="$HOME/.local/bin:$PATH"
 
 # Aliases 
-alias ls="eza -l --git --icons=always"
-alias lst="eza -l --git --tree --icons=always"
-alias lsa="eza -l -a --git --tree --icons=always"
+alias ls="eza -l --git --icons=always --no-user"
+alias lst="eza -l --git --tree --icons=always --no-user"
+alias lsa="eza -l -a --git --tree --icons=always --no-user"
 alias ff="fastfetch"
 alias vi="nvim"
 alias v="nvim"
@@ -50,7 +50,7 @@ alias dkc="docker compose"
 
 # Quick activate for uv/venv
 alias va="source .venv/bin/activate"
-alias vd="deactivate"
+alias vda="deactivate"
 
 # Enable Vi mode
 bindkey -v
