@@ -15,7 +15,7 @@ binds {
 
     Mod+S hotkey-overlay-title="Open File Manager" { spawn "kitty" "-e" "/usr/bin/spf";}
 
-    Mod+B hotkey-overlay-title="Open Browser" { spawn "brave"; }
+    Mod+B hotkey-overlay-title="Open Browser" { spawn "brave-origin"; }
     
     Mod+Z hotkey-overlay-title="Open Browser" { spawn "zen"; }
     
