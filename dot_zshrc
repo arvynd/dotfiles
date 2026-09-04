@@ -18,7 +18,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # Aliases 
 alias ls="eza -l --git --icons=always"
 alias lst="eza -l --git --tree --icons=always"
-alias lsa="eza -l -a --git --tree --icons=always"
+alias lsa="eza -l -a --git --icons=always"
 alias ff="fastfetch"
 alias vi="nvim"
 alias v="nvim"
