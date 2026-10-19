@@ -6,6 +6,7 @@ binds {
 
     // === Application Launchers ===
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
+    Mod+G hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
     Alt+Space hotkey-overlay-title="Application Launcher" {
         spawn "dms" "ipc" "call" "spotlight" "toggle";
     }
@@ -15,11 +16,11 @@ binds {
 
     Mod+S hotkey-overlay-title="Open File Manager" { spawn "kitty" "-e" "/usr/bin/spf";}
 
-    Mod+B hotkey-overlay-title="Open Browser" { spawn "brave-origin"; }
+    Mod+B hotkey-overlay-title="Open Browser" { spawn "helium-browser"; }
     
     Mod+Z hotkey-overlay-title="Open Browser" { spawn "zen"; }
     
-    Mod+T hotkey-overlay-title="Open Browser" { spawn "helium-browser";}
+    Mod+T hotkey-overlay-title="Open Browser" { spawn "brave-origin";}
 
     Mod+V hotkey-overlay-title="Clipboard Manager" {
         spawn "dms" "ipc" "call" "clipboard" "toggle";
