@@ -2,9 +2,6 @@
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
-config-notification {
-    disable-failed
-}
 // Outputs from existing configuration
 output "HDMI-A-1" {
     mode "2560x1440" // Set resolution and refresh rate
@@ -100,6 +97,7 @@ layout {
     struts {
     }
 }
+// TODO(noctalia): update namespace/app-id
 layer-rule {
     match namespace="^quickshell$"
     place-within-backdrop true
@@ -115,6 +113,7 @@ overview {
 // See the binds section below for more spawn examples.
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
+spawn-at-startup "noctalia"
 environment {
   XDG_CURRENT_DESKTOP "niri"
 }
@@ -205,7 +204,8 @@ window-rule {
     match app-id="zoom"
     open-floating true
 }
-// Open dms windows as floating by default
+// TODO(noctalia): update namespace/app-id
+// Open shell windows as floating by default
 window-rule {
     match app-id=r#"org.quickshell$"#
     open-floating true
@@ -224,10 +224,12 @@ recent-windows {
     }
 }
 
-// Include dms files
-include "dms/colors.kdl"
-include "dms/layout.kdl"
-include "dms/alttab.kdl"
-include "dms/binds.kdl"
+include "layout.kdl"
+include "binds.kdl"
 
-include "dms/cursor.kdl"
+cursor {
+    xcursor-theme "Adwaita"
+    xcursor-size 24
+}
+
+include "noctalia.kdl"
